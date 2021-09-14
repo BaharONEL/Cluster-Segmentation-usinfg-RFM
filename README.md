@@ -1,4 +1,10 @@
 # Cluster-Segmentation-using-RFM
+
+RFM (Recency, Frequency, Monetary) analysis is a behavior-based approach grouping customers into segments. It groups the customers on the basis of their previous purchase transactions. How recently, how often, and how much did a customer buy. RFM filters customers into various groups for the purpose of better service. It helps managers to identify potential customers to do more profitable business. There is a segment of customer who is the big spender but what if they purchased only once or how recently they purchased? Do they often purchase our product? Also, It helps managers to run an effective promotional campaign for personalized service.
+
+• Recency (R): Who have purchased recently? Number of days since last purchase (least recency)
+• Frequency (F): Who has purchased frequently? It means the total number of purchases. ( high frequency)
+• Monetary Value(M): Who have high purchase amount? It means the total money customer spent (high monetary value)
   ## Business Problem :
 An e-commerce company segments its customers and
 determine marketing strategies according to segments
