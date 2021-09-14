@@ -1,17 +1,3 @@
-
-#Değişkenler#
-# Invoice – Fatura Numarası   (Eğer bu kod C ile başlıyorsa işlemin iptal edildiğini ifade eder)
-# StockCode – Ürün kodu (Her bir ürün için eşsiz numara)
-# Description – Ürün ismi
-# Quantity – Ürün adedi (Faturalardaki ürünlerden kaçar tane satıldığını ifade etmektedir)
-# InvoiceDate – Fatura tarihi
-# UnitPrice – Fatura fiyatı (Sterlin)
-# CustomerID – Eşsiz müşteri numarası
-# Country – Ülke ismi
-# UnitPrice – Fatura fiyatı (Sterlin)
-
-
-
 import pandas as pd
 import datetime as dt
 
