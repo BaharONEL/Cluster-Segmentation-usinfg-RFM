@@ -1,1 +1,1 @@
-# Cluster-Segmentation-usinfg-RFM
+# Cluster-Segmentation-using-RFM
