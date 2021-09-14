@@ -37,3 +37,7 @@ The vast majority of the company's customers are corporate customers.
 
 • UnitPrice : Invoice price (Sterling)
 
+## Dataset : 
+https://archive.ics.uci.edu/ml/datasets/Online+Retail+II
+
+
