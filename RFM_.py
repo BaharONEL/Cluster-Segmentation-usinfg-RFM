@@ -6,11 +6,11 @@ pd.set_option('display.max_columns', None)
 pd.set_option('display.max_rows', None)
 pd.set_option('display.float_format', lambda x: '%.5f' % x)
 
-df_ = pd.read_excel(r"C:\Users\Oguz\Desktop\DCMLBC06\HAFTA03\dataset\online_retail_II.xlsx", sheet_name= "Year 2010-2011")
+df_ = pd.read_excel("online_retail_II.xlsx", sheet_name= "Year 2010-2011")
 df_.head()
 df = df_.copy()
 
-.
+## Pandas Exercises ##
 df.describe().T
 df.isnull().sum()
 df.dropna(inplace=True)
@@ -21,7 +21,7 @@ df = df[~df['Invoice'].str.contains("C", na= False)]
 df["TotalPrice"] = df["Quantity"]*df["Price"]
 
 
-####RFM metriklerinin hesaplanması#####
+#### Calculating RFM metrics #####
 
 df['InvoiceDate'].max()
 today_date = dt.datetime(2021, 12, 11)
@@ -38,7 +38,7 @@ rfm['monetary_score'] = pd.qcut(rfm["monetary"],5,labels=[5,4,3,2,1])
 rfm["RFM_SCORE"] = (rfm["recency_score"].astype(str) + rfm["frequency_score"].astype(str))
 
 
-
+## Segment map ##
 
 seg_map = {
     r'[1-2][1-2]': 'hibernating',
@@ -68,7 +68,7 @@ new_df.head()
 
 new_df.to_csv("loyal_customer.csv")
 
-#### Tüm Sürecin Fonksiyonlaştırılşması #####
+#### Functionalization of the RFM Process #####
 
 def check_rfm(dataframe, ):
     dataframe.dropna(inplace=True)
