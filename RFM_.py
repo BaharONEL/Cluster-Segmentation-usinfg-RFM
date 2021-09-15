@@ -59,7 +59,7 @@ rfm.head()
 
 df_merge = pd.merge(df, rfm, on="Customer ID")
 df_merge.head(5)
-df_merge.groupby("SEGMENT").agg({"Price": "sum"}).sort_values("Price", ascending=False)    ##önemli segmentleri bu şekilde görebilir miyim???#
+df_merge.groupby("SEGMENT").agg({"Price": "sum"}).sort_values("Price", ascending=False)   
 
 rfm[["SEGMENT", "recency", "frequency", "monetary"]].groupby("SEGMENT").agg(["mean", "count"]).head()
 new_df = pd.DataFrame()
